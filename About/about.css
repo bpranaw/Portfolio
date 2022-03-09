@@ -1,0 +1,19 @@
+.about_headings {
+  text-decoration: underline;
+}
+
+.posters {
+  height: 400px;
+  width: 300px;
+
+  border-radius: 5%;
+  margin: 1em;
+}
+
+.cat_posters {
+  height: 300px;
+  width: 300px;
+
+  border-radius: 5%;
+  margin: 1em;
+}
