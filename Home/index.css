@@ -1,11 +1,9 @@
 .page {
-  background-color: green;
+  background-color: pink;
 }
 
-.the_navbar {
-  color: black;
+.general_template {
   background-color: white;
-
   border-radius: 0.5em;
 
   margin-top: 1em;
@@ -14,19 +12,80 @@
   margin-right: 1%;
 }
 
+.the_navbar {
+  color: black;
+  background-color: white;
+}
+
 .nav_button {
   background-color: white;
-  padding-left: 2em;
-  padding-right: 2em;
+  padding: 0.5em 1em 0.5em 1em;
 
   border-style: solid;
   border-width: 2px;
-  border-color: green;
+  border-color: burlywood;
   border-radius: 0.5em;
   text-align: center;
 
-  margin: 0.5em;
+  color: black;
+  text-decoration: none;
+
+  font-size: x-large;
 }
+
+.nav_items {
+  margin: 1em 0.5em 1em 0.5em;
+}
+
 .nav_button:hover {
   background-color: green;
+  border-color: green;
+  color: white;
+  text-decoration: none;
+}
+
+.about {
+  padding: 1em;
+  font-size: x-large;
+}
+
+.my_pic {
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.image_adjust {
+  border-radius: 10%;
+  padding: 1em;
+  width: 300px;
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .image_adjust {
+    width: 260px;
+  }
+}
+
+.image_buttons {
+  text-align: center;
+  padding: 0em;
+  margin: 1em;
+  display: block;
+  font-size: large;
+
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 5%;
+  border-color: burlywood;
+
+  color: black;
+  text-decoration: none;
+}
+
+.image_buttons:hover {
+  background-color: green;
+  border-color: green;
+  color: white;
+  text-decoration: none;
 }

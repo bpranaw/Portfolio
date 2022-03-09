@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title>Portfolio Front Page</title>
+    <title>Homepage</title>
     <link rel="apple-touch-icon" sizes="180x180" href="../nebula.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="../nebula.png" />
 
@@ -27,8 +27,12 @@
 
   <body class="page">
     <!-- Navbar -->
-    <nav class="the_navbar navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand nav_button" href="../Home/index.html">Home</a>
+    <nav
+      class="the_navbar general_template navbar navbar-expand-lg navbar-light"
+    >
+      <a class="navbar-brand nav_button nav_items" href="../Home/index.html"
+        >Home</a
+      >
       <button
         class="navbar-toggler"
         type="button"
@@ -45,29 +49,27 @@
 
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ml-auto">
-          <div class="nav-item">
-            <a class="navbar-brand nav_button" href="../About/about.html"
-              >About</a
+          <div class="nav-item nav_items">
+            <a class="nav_button" href="../About/about.html">About</a>
+          </div>
+
+          <div class="nav-item nav_items">
+            <a class="nav_button" href="../Experience/experience.html"
+              >Experience</a
             >
           </div>
-          <div class="nav-item">
+
+          <div class="nav-item nav_items dropdown">
             <a
-              class="navbar-brand nav_button"
-              href="../pranaw_bajracharya_resume.pdf"
-              >Resume</a
-            >
-          </div>
-          <div class="nav-item dropdown">
-            <a
-              class="navbar-brand nav_button dropdown-toggle"
-              href="#"
+              class="nav_button dropdown-toggle"
+              href="../Projects/projects.html"
               id="navbarDropdownMenuLink"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Experience
+              Projects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="#">Project 1</a>
@@ -76,16 +78,93 @@
             </div>
           </div>
 
-          <div class="nav-item">
-            <a class="navbar-brand nav_button" href="../Contact/contact.html"
-              >Contact</a
-            >
+          <div class="nav-item nav_items">
+            <a class="nav_button" href="../Contact/contact.html">Contact</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <p></p>
+    <div class="about general_template">
+      <h1 style="text-align: center">
+        Hello there! My name is Pranaw Bajracharya (He/Him)
+      </h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-4" style="padding: 0.5em">
+            <img
+              src="me.png"
+              alt="A picture of Pranaw Bajracharya."
+              width="300px"
+              class="my_pic"
+            />
+          </div>
+          <div class="col-md-12 col-lg-8">
+            <p id="about_me_text1">
+              I study computer science at Portland State University. I worked at
+              Apple as a sales specialist and I have experience working as a
+              game design instructor for ID Tech. I believe my time in sales and
+              instruction has given me the ability to communicate effectively in
+              most situations. My personal projects mostly deal with robotics
+              and video game design, and can be seen on my Github. I’ve mainly
+              worked with Java, C++, and Python. I aspire to know how everything
+              works. As long as the work gives me insight into how a system or
+              concept works, I am content.
+            </p>
+
+            <p id="about_me_text2">
+              I will be participating in two 6 month internships through the
+              MECOP program, and anticipate graduating with my B.S. in Computer
+              Science Fall of 2023. Afterwards, I hope to work in Robotics,
+              Automation, or OS development. I am also interested in working in
+              Game Engine development and perhaps working with data and
+              simulation. After working in the industry for a long while, I hope
+              to return to school to attain a PhD in Electrical Engineering and
+              Computer science to satisfy my curiosity...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="general_template">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a class="image_buttons" href="../About/about.html">
+              More About Me
+              <img
+                class="image_adjust"
+                src="cat1.jpg"
+                alt="Image of Cat, represents the About Me button"
+              />
+            </a>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a class="image_buttons" href="../Experience/experience.html">
+              My Experience
+              <img
+                class="image_adjust"
+                src="cat2.jpg"
+                alt="Image of Cat, represents the My Experience button"
+              />
+            </a>
+          </div>
+
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a class="image_buttons" href="../Projects/projects.html">
+              My Projects
+              <img
+                class="image_adjust"
+                src="cat3.jpg"
+                alt="Image of Cats, represents the My Projects button"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Scripts necessary for bootstrap-->
     <script
