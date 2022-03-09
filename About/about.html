@@ -1,14 +1,105 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <title></title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/nebula.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/nebula.png" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Homepage</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../nebula.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../nebula.png" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86"
+    />
+
+    <meta
+      name="description"
+      content="This is the homepage of the Portfolio of
+    the programmer, Pranaw Bajracharya. Learn about his projects, resume,
+    biography, experience, and education"
+    />
   </head>
 
-  <body>
-    <h1></h1>
-    <p></p>
+  <body class="page">
+    <!-- Navbar -->
+    <nav
+      class="the_navbar general_template navbar navbar-expand-lg navbar-light"
+    >
+      <a class="navbar-brand nav_button nav_items" href="../Home/index.html"
+        >Home</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Items -->
+
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <div class="nav-item nav_items">
+            <a class="nav_button" href="../About/about.html">About</a>
+          </div>
+
+          <div class="nav-item nav_items">
+            <a class="nav_button" href="../Experience/experience.html"
+              >Experience</a
+            >
+          </div>
+
+          <div class="nav-item nav_items dropdown">
+            <a
+              class="nav_button dropdown-toggle"
+              href="../Projects/projects.html"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Project 1</a>
+              <a class="dropdown-item" href="#">Project 2</a>
+              <a class="dropdown-item" href="#">Project 3</a>
+            </div>
+          </div>
+
+          <div class="nav-item nav_items">
+            <a class="nav_button" href="../Contact/contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Scripts necessary for bootstrap-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
