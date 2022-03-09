@@ -12,6 +12,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../Home/index.css" />
+    <link rel="stylesheet" href="../Experience/experience.css" />
+    <link rel="stylesheet" href="projects.css" />
+
     <meta
       name="viewport"
       content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86"
@@ -71,9 +74,9 @@
               Projects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#">Project 1</a>
-              <a class="dropdown-item" href="#">Project 2</a>
-              <a class="dropdown-item" href="#">Project 3</a>
+              <a class="dropdown-item" href="#project1">FTC Robot Control</a>
+              <a class="dropdown-item" href="#project2">Euler Problems</a>
+              <a class="dropdown-item" href="#project3">Tek-Bot Assignment</a>
             </div>
           </div>
 
@@ -85,6 +88,91 @@
         </nav>
       </div>
     </nav>
+
+    <div class="about general_template">
+      <h1 class="experience_heading">My Projects</h1>
+      <p>
+        All of my projects can be access on my
+        <a href="https://www.github.com/bpranaw"> Github</a>. You will see
+        mostly code for controlling Robots. I also have solutions to
+        mathematical questions, games, and school projects. I've written
+        summaries of a few of my projects below.
+      </p>
+    </div>
+
+    <div class="about general_template">
+      <a id="project1"></a>
+      <h1 class="experience_heading">FTC Robot Control</h1>
+      <p>
+        This project can be found
+        <a
+          href="https://github.com/bpranaw/ftc_app/tree/750/TeamCode/src/main/java"
+        >
+          here</a
+        >. The project was based on the FTC mobile app which allowed us to use
+        Wi-Fi direct to wirelessly control hardware connected through the Rev
+        Robotics Control Hub. The project had two main purpose: allow us to
+        control the Robot Autonomously, and allow us to control the robot with a
+        controller.
+      </p>
+      <p>
+        The competition provided the initial code that would allow the software
+        to communicate with the hardware, it was my job to properly create that
+        interface for the specific hardware components of our robot. I
+        interfaced the robot's motors, servos, and sensors with the software.
+        Depending on the configuration of the driving mechanism, I would have to
+        base the robot's motor movements on special equations. For instance, our
+        Robot design from 2017-2018 allowed it to move in all two dimensional
+        directions, with or without rotating. That meant the power going to each
+        motor had to be adjusted just right to achieve that precise movement.
+      </p>
+
+      <p>
+        The part of the coe I was particularly proud of at the time was the
+        abstraction I managed to achieve with the autonomous movement of the
+        robot. I abstraced the code to the point where I could essentially just
+        tell the robot "move forward, land, go xyz distance when you see yellow"
+        in a simple way. This project was solely written in Java, and incrased
+        my knowledge of Java and Object Oriented Programming.
+      </p>
+    </div>
+
+    <div class="about general_template">
+      <a id="project2"></a>
+      <h1 class="experience_heading">Euler Problems</h1>
+      <p>
+        This project can be found
+        <a href="https://github.com/bpranaw/Euler-Problems"> here</a>. It holds
+        my solutions to problems from the
+        <a href="https://projecteuler.net/">Project Euler</a> website. Project
+        Euler contains math problems that require both mathematical and computer
+        science knowledge to solve efficiently. Essentially, most of the
+        problems are too ridiciously tediuous for human calculation but perfect
+        for a machine. Some problems I've computed include: finding the largest
+        prime factor of x number, sum of all fibonacci numbers to the nth
+        number, largest palindrome of the product of two three digit numbers. I
+        decided to do this project in Python so I could learn the language and
+        focus on completing the math instead of the code.
+      </p>
+    </div>
+
+    <div class="about general_template">
+      <a id="project3"></a>
+      <h1 class="experience_heading">Tek-Bot Assignment</h1>
+      <p>
+        This project can be found
+        <a href="https://github.com/bpranaw/Tekbot-Control"> here</a>. It's a
+        simple project where I interfaced the components of an Arduino Nano
+        based robot with software, and wrote a script that allowed it to
+        traverse a maze. The robot would use an ultrasonic sensor to essentially
+        "see" what was in front of it, and then make the decision to go forward.
+        Then if not, it would go right, and if that was not possible, it would
+        go left. If none were possible, it would turn around and start again.
+        The difficult part of this project was mostly figuring out how the
+        Arduino's hardware could be connected to software. The project was
+        written in c++ in the Arduino IDE.
+      </p>
+    </div>
 
     <!-- Scripts necessary for bootstrap-->
     <script
