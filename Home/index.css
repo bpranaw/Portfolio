@@ -61,7 +61,7 @@
   width: 300px;
 }
 
-@media (min-width: 900px) and (max-width: 1200px) {
+@media screen and (min-width: 900px) and (max-width: 1200px) {
   .image_adjust {
     width: 260px;
   }
