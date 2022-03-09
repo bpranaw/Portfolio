@@ -12,6 +12,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../Home/index.css" />
+    <link rel="stylesheet" href="../Experience/experience.css" />
+    <link rel="stylesheet" href="contact.css" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86"
@@ -85,6 +87,126 @@
         </nav>
       </div>
     </nav>
+
+    <div class="about general_template">
+      <h1 class="experience_heading">Find Me On:</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a
+              class="logos"
+              href="https://www.linkedin.com/in/pranaw-bajracharya-a754bb1b5/"
+              >LinkedIn
+              <img
+                class="logos_image"
+                alt="Image of LinkedIn Logo as a button to my LinkedIn"
+                src="linkedin.webp"
+              />
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a class="logos" href="https://github.com/bpranaw"
+              >Github
+              <img
+                class="logos_image"
+                alt="Image of Github Logo as a button to my Github"
+                src="github.png"
+              />
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <a class="logos" href="mailto:bpranaw@gmail.com">
+              bpranaw@gmail.com
+              <img
+                class="logos_image"
+                alt="Image of Email Logo"
+                src="mail.png"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about general_template">
+      <h1 class="experience_heading">Leave Me Your Information:</h1>
+      <form class="container">
+        <div class="form-group">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Tell me your name!"
+              />
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <label for="email_input">Email Address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email_input"
+                aria-describedby="email_help"
+                placeholder="Give me your email."
+              />
+              <small
+                style="font-size: medium"
+                id="email_help"
+                class="form-text text-muted"
+                >This will let me contact you</small
+              >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <label for="message_area">Message</label>
+              <textarea
+                class="form-control"
+                id="message_area"
+                rows="4"
+                placeholder="Leave me a message!"
+                style="margin-bottom: 1em"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-sm-12 col-md-6"
+              style="font-size: medium; margin-bottom: 1em"
+            >
+              Do you want me to contact you?
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="contact_radios"
+                  id="contact_radio1"
+                />
+                <label class="form-check-label" for="contact_radio1">Yes</label>
+              </div>
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="contact_radios"
+                  id="contact_radio2"
+                />
+                <label class="form-check-label" for="contact_radio2">No</label>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
 
     <!-- Scripts necessary for bootstrap-->
     <script
