@@ -1,0 +1,16 @@
+.logo {
+  height: 140px;
+  width: 420px;
+}
+
+.experience_heading {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.work_images {
+  width: 200px;
+  padding: 1em;
+  margin: 0 auto;
+  display: block;
+}
