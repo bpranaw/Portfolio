@@ -2,6 +2,8 @@ var cat = document.getElementById("Cat");
 var cat_image = document.getElementById("cat_image");
 var obstacle = document.getElementById("Obstacle");
 var counter = 0;
+var high_score = 0;
+var alerted = false;
 
 function remove_animation() {
   cat.classList.remove("animate");
@@ -30,12 +32,23 @@ var check = setInterval(function () {
   if (obstacle_left < 36 && obstacle_left > 0 && cat_top >= 267) {
     obstacle.style.animation = "none";
 
-    alert("Game Over! Your score was: " + Math.floor(counter / 10));
+    if (!alerted) {
+      alert("Game Over! Your score was: " + Math.floor(counter / 10));
+    }
+    alerted = true;
+
+    let new_score = counter / 10;
+
+    if (new_score > high_score) {
+      high_score = new_score;
+    }
+
     counter = 0;
 
     obstacle.style.animation = "obstacle_movement 1s infinite linear";
   } else {
     counter++;
     document.getElementById("score").innerHTML = Math.floor(counter / 10);
+    document.getElementById("high_score").innerHTML = Math.floor(high_score);
   }
 }, 10);
